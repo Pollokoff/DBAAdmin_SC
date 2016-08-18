@@ -5,15 +5,16 @@ GO
 CREATE PROC [dbo].[WesDemo]
 AS
 
-SELECT 
-ServerName,
-InstanceName,
-IP,
-GUID,
-PROD,
-DateLastLogErrorImported,
-DOMAIN,
-Purpose,
-Version
+SELECT ServerName,
+       InstanceName,
+       IP,
+       GUID,
+       PROD,
+       DateLastLogErrorImported,
+       DOMAIN,
+       Purpose,
+       Version,
+       LocationID,
+       DMZ
 FROM dbo.SQLServers
 GO
